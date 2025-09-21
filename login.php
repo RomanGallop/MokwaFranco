@@ -1,11 +1,14 @@
 <?php
 
 session_start();
-require "index.php";
+require "conexion.php";
 
 # recibir datos del formulario
-$email = $_POST["email"];
-$clave = $_POST["clave"];
+$email = trim($_POST["email"]);
+$clave = trim($_POST["clave"]);
+
+echo "EMAIL RECIBIDO: " . $email . "<br>";
+echo "CLAVE RECIBIDA: " . $clave . "<br>";
 
 # buscar usuario en la base de datos
 $sql = "SELECT u.id_usuario, u.clave, u.rol, p.nombre, p.apellido
