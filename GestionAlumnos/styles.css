@@ -1,0 +1,143 @@
+/* ===== Decoración adicional para el dashboard ===== */
+
+/* Centrar todo el contenido principal */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Dashboard header centrado y con fondo */
+.dashboard-header {
+    width: 100%;
+    max-width: 1000px;
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.dashboard-header a {
+    background: #dc3545;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dashboard-header a:hover {
+    background: #b02a37;
+}
+
+/* Tarjetas de clases más decoradas */
+.card {
+    width: 100%;
+    max-width: 1000px;
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Fondos para listas de notas y asistencias */
+.card ul {
+    background: #e2e8f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card ul li {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+/* Formularios centrados y con fondo */
+form {
+    background: #f0f4ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Totales con fondo y centrado */
+.totales {
+    background: #dbeafe;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Centrar botones */
+button {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* Links de clase centrados */
+ul li a {
+    display: block;
+    text-align: center;
+    background: #fef3c7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #92400e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background: #fde68a;
+    color: #78350f;
+}
+
+/* Títulos de secciones con fondo */
+h2,
+h3,
+h4 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f1f5f9;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card,
+    .dashboard-header {
+        width: 95%;
+    }
+}
